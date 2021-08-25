@@ -4,13 +4,14 @@
 $options = ['Rock','Paper','Scissors'];
 
 
-echo "Welcome to Rock-Paper-Scissors!".PHP_EOL;
-echo "Enter 1 to take Rock ".PHP_EOL;
-echo "Enter 2 to take Paper ".PHP_EOL;
-echo "Enter 3 to take Scissors ".PHP_EOL;
+
 $gameOn = true;
 while ($gameOn)
 {
+    echo "Welcome to Rock-Paper-Scissors!".PHP_EOL;
+    echo "Enter 1 to take Rock ".PHP_EOL;
+    echo "Enter 2 to take Paper ".PHP_EOL;
+    echo "Enter 3 to take Scissors ".PHP_EOL;
     $choice = readline(">");
     $choice = (int) $choice;
     if (!isset($options[$choice-1]))
@@ -38,9 +39,10 @@ while ($gameOn)
     }
     elseif ($choice === 3 )
     {
-       echo $computerChoice === 1 ? "Rock beat your Scissors" : "Your Rock beats Paper";
+       echo $computerChoice === 1 ? "Rock beat your Scissors" : "Your Scissors beats Paper";
     }
     echo PHP_EOL;
+
     $gameOn = false;
 
 
