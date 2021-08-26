@@ -43,6 +43,11 @@ while ($gameOn)
     }
     echo PHP_EOL;
 
+    if(readline("Type 'yes' for another try: ") === 'yes')
+    {
+        continue;
+    }
+
     $gameOn = false;
 
 
